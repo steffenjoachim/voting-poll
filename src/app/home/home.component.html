@@ -2,27 +2,12 @@
     <h1>Wahl Umfrage</h1>
 
     <p class="sub-title">Stimmen Sie für den von Ihnen bevorzugten Kanditaten ab!</p>
-
-    <article class="card-container" (click)="incrementCount($event)">
-        <section class="card" id="1">
-          <h2>Olaf Scholz</h2>
-          <h3 class="vote-count">0</h3>
-          <button class="vote-btn">Wählen!</button>
-        </section>
-        <section class="card" id="2">
-          <h2>Robert Habeck</h2>
-          <h3 class="vote-count">0</h3>
-          <button class="vote-btn">Wählen!</button>
-        </section>
-        <section class="card" id="3">
-          <h2>Friedrich Merz</h2>
-          <h3 class="vote-count">0</h3>
-          <button class="vote-btn">Wählen!</button>
-        </section>
-        <section class="card" id="4">
-          <h2>Alice Weidel</h2>
-          <h3 class="vote-count">0</h3>
-          <button class="vote-btn">Wählen!</button>
-        </section>
-      </article>      
+    <<article class="card-container">
+      <app-card *ngFor="let candidate of candidates" 
+      [id]="candidate.id" 
+      [name]="candidate.name" 
+      [img]="candidate.img" 
+      (vote)="incrementCount($event)">
+</app-card>
+      </article>         
 </main>

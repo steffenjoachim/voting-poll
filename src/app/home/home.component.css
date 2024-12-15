@@ -1,0 +1,44 @@
+main {
+    margin: 3rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.sub-title {
+    margin-block: 1rem;
+    font-size: 1.5rem;
+    color: var(--clr-yellow);
+    font-weight: bold;
+    text-align: center;
+}
+
+.card-container {
+    display: flex;
+    flex: 1;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-block: 5rem;
+}
+
+.card {
+    width: 20%;
+    background: var(--clr-white);
+    padding: 1.5rem .5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: .75rem;
+}
+
+h3 {
+    margin-top: 1rem;
+}
+
+.vote-btn {
+    margin-top: 1rem;
+    background: var(--clr-white);
+    font-weight: bold;
+    padding: .5rem 1.5rem;
+    border-radius: .25rem;
+}

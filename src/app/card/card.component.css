@@ -1,5 +1,5 @@
 .card {
-    background: var(--clr-white);
+    background: var(--clr-white-gray);
     padding: 1.5rem .5rem;
     display: flex;
     flex-direction: column;
@@ -28,4 +28,5 @@ img {
     font-weight: bold;
     padding: .5rem 1.5rem;
     border-radius: .25rem;
+    border: none;
 }

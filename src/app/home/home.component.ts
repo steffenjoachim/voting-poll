@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HeaderComponent } from '../header/header.component';
 import { CardComponent } from '../card/card.component';
+import { FooterComponent } from '../footer/footer.component';
 
 
 @Component({
@@ -10,6 +11,7 @@ import { CardComponent } from '../card/card.component';
   styleUrls: ['./home.component.css'],
   imports: [ CardComponent,
              HeaderComponent,
+             FooterComponent,
              CommonModule,
    ]
 })

@@ -1,11 +1,9 @@
-<app-header></app-header>
 <main>
-    <article class="card-container">
-      <app-card *ngFor="let candidate of candidates" 
-      [id]="candidate.id" 
-      [name]="candidate.name" 
-      [img]="candidate.img" 
-      (vote)="incrementCount($event)">
-</app-card>
-      </article>         
+      <app-header></app-header>
+      <article class="card-container">
+            <app-card *ngFor="let candidate of candidates" [id]="candidate.id" [name]="candidate.name"
+                  [img]="candidate.img" (vote)="incrementCount($event)">
+            </app-card>
+      </article>
+      <app-footer></app-footer>
 </main>

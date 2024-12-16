@@ -4,28 +4,21 @@ main {
     flex-direction: column;
 }
 
-.sub-title {
-    margin-block: 1rem;
-    font-size: 1.5rem;
-    color: var(--clr-yellow);
-    font-weight: bold;
-    text-align: center;
-}
-
 .card-container {
     display: flex;
     flex: 1;
     gap: 1rem;
     flex-wrap: wrap;
     justify-content: center;
-    padding-block: 5rem;
 }
 
-.card {
-    min-width: 23%;
-    max-width: 23%;
-}
 
-.card:nth-of-type(n+2) img { /* Für die letzten drei Bilder */
-    object-position: 50% 90%; /* x=50% (zentriert), y=70% (nach unten) */
+@media (min-width: 570px) {
+    main {
+        max-height: 100vh;
+    }
+    .card-container {
+        padding-top: 3.7rem;
+    }
+    
 }

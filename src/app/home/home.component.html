@@ -1,8 +1,6 @@
+<app-header></app-header>
 <main>
-    <h1>Wahl Umfrage</h1>
-
-    <p class="sub-title">Stimmen Sie für den von Ihnen bevorzugten Kanditaten ab!</p>
-    <<article class="card-container">
+    <article class="card-container">
       <app-card *ngFor="let candidate of candidates" 
       [id]="candidate.id" 
       [name]="candidate.name" 
